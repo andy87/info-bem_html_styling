@@ -1,0 +1,159 @@
+.block__menu {
+  display: inline-block;
+}
+.b_menu--wrapper {
+  display: inline-block;
+}
+.b_menu--item {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 5px;
+
+  &:last-child{
+    padding-top: 0;
+  }
+
+  &:before {
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+    right: 40px;
+    content: '';
+    height: 0;
+    background: #004bb5;
+    background: linear-gradient(to bottom, #2569B9 0%, #004bb5 100%);
+    transition: all .3s linear;
+  }
+  &:hover{
+
+    .b_menu--link {
+      color: #FFF;
+    }
+
+    &:before {
+      height: 6px;
+    }
+  }
+}
+.b_menu--link {
+  display: block;
+  padding: 0 25px;
+  color: white;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s linear;
+
+  &:hover{
+    color: #1d5cac;
+  }
+}
+
+.b_menu--hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 800px)
+{
+  .block__welcome {
+    position: relative;
+  }
+  .block__header {
+
+    &.__main {
+      position: initial;
+      height: auto;
+    }
+
+    .b_header--layout {
+      position: initial;
+    }
+
+    .b_header--link {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  .block__menu
+  {
+    .b_menu--wrapper {
+      position: absolute;
+      z-index: 777;
+      top: 75px;
+      bottom: 0;
+      left: 100%;
+      right: 0;
+      overflow: hidden;
+      background: @background_form_element;
+      transition: left .3s linear;
+
+      &.__open {
+        left: 0;
+      }
+
+      .b_menu--item {
+
+        &:before {
+          bottom: 0;
+          right: 0;
+          left: 0;
+        }
+      }
+    }
+
+    .b_menu--item {
+      display: block;
+      padding-left: 5px;
+      border-bottom: 1px solid #1d5cac;
+
+      &.__active {
+        padding-left: 15px;
+
+        .b_menu--link {
+          font-weight: 500;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    .b_menu--link{
+      text-align: left;
+      padding: 15px 25px;
+    }
+
+    .b_menu--hamburger {
+      margin: 4px 10px;
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background-image: url(../img/icon/hanburger.svg);
+      background-color: transparent;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+@media (max-width: 520px)
+{
+  .b_header--link {
+    width: 60px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 800px)
+{
+  .b_welcome--overlay {
+    display: none;
+  }
+}

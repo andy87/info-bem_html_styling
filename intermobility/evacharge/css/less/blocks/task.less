@@ -1,0 +1,90 @@
+.block__task{
+  position: relative;
+  display: block;
+  padding: 100px 15px 85px 15px;
+  overflow: hidden;
+
+  .text {
+    margin: 20px 0 60px 0;
+  }
+}
+
+.b_task--overlay {
+  position: relative;
+  z-index: 7;
+  display: block;
+  width: 420px;
+  margin-bottom: 40px;
+}
+
+
+.b_task--title {
+  display: block;
+  margin: 15px 0;
+  color: #0081C3;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: @font_1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.b_task--info {
+  display: block;
+  color: @gray;
+  line-height: 22px;
+  font-size: 14px;
+  font-family: @font_1;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.b_task--img {
+  display: none;
+}
+
+@media screen and (min-width: @menuReType)
+{
+
+  .block__task{
+
+    .b_task--img {
+      display: block;
+      position: absolute;
+
+      &.__ios {
+        z-index: 5;
+        top: -15px;
+        left: 41.5%;
+        animation: Orbita 12s linear infinite;
+      }
+      &.__android {
+        z-index: 2;
+        bottom: -15px;
+        right: 1%;
+        animation: Orbita2 15s linear infinite;
+      }
+    }
+  }
+
+
+  @keyframes Orbita {
+    from {
+      -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);
+    }
+  }
+
+  @keyframes Orbita2 {
+    from {
+      -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-360deg) translateX(15px) rotate(360deg);
+    }
+  }
+}

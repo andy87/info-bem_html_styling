@@ -1,0 +1,64 @@
+@import "normalize.css";
+
+@import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@blue : rgb( 11, 63, 141 );
+@background_benefit : #041427;
+@background_product : #021a34;
+@background_light_dark: #11263e;
+
+@background_form_element : #0a223e;
+@background_input : #031427;
+
+.blue_background() {
+  background: rgb( 11, 63, 141 );
+  background: linear-gradient( 45deg, @blue 0%, rgb( 37, 105, 185 ) 100% );
+}
+.hover_background(){
+  position: relative;
+  background: #041427;
+
+  &:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all .3s linear;
+    background: linear-gradient(45deg, #123b6f 0%,#041427 50%);
+  }
+  &:hover:before {
+    opacity: 1;
+  }
+}
+
+.tooltipster-sidetip {
+  .tooltipster-box {
+    .tooltipster-content {
+      padding: 5px 25px;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}
+
+@import "less/common";
+@import "less/header";
+@import "less/menu";
+@import "less/welcome";
+@import "less/benefit";
+@import "less/service";
+@import "less/filter";
+@import "less/product";
+@import "less/property";
+@import "less/calc";
+@import "less/config";
+@import "less/form";
+@import "less/range";
+@import "less/partners";
+@import "less/social";
+@import "less/footer";
+@import "less/modal";
+@import "mobile";

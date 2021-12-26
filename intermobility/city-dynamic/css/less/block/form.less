@@ -1,0 +1,121 @@
+// form.less
+
+
+
+
+.block__form {
+  display: block;
+}
+
+.b_form--wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  font-size: 0;
+}
+
+.b_form--layout {
+  display: inline-block;
+  width: 46%;
+}
+
+.b_form--title {
+  display: block;
+  margin: 15px 0;
+  color: @colorOrange;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-family: @font;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.b_form--row {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &.__text {
+    text-align: center;
+  }
+}
+
+.b_form--label {
+  display: block;
+  width: 100%;
+}
+
+.inputStyle(){
+  padding: 15px 20px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: @font;
+  letter-spacing: -0.15px;
+  background-color: @colorBackgroundInput;
+  opacity: 0.6;
+  border: none;
+  border-radius: 4px;
+
+  &:valid,
+  &:focus {
+    color: #323232;
+    opacity: 1;
+  }
+}
+
+.b_form--input {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  line-height: 20px;
+  .inputStyle();
+}
+
+.b_form--textarea {
+  display: block;
+  width: 100%;
+  line-height: 17px;
+  .inputStyle();
+}
+
+.b_form--button {
+  display: block;
+  float: right;
+}
+
+.b_form--notify {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 12px;
+  line-height: 15px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+
+  A {
+    color: #0081C3;
+    line-height: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &.__blink{
+    animation: form__notify 1.25s linear ;
+  }
+}
+
+@-webkit-keyframes form__notify {
+  from {border-color: #f00;}
+  to {border-color: #fff;}
+}
+@keyframes form__notify {
+  from {border-color: #f00;}
+  to {border-color: #fff;}
+}
+

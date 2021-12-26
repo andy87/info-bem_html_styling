@@ -1,0 +1,52 @@
+// page.less
+
+
+
+.block__page {
+  display: block;
+  height: auto;
+}
+
+.b_page--item {
+  display: block;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &#welcome {
+    height: 100vh;
+    min-height: 800px;
+    background-image: url("/img/welcome/bg/background.jpg");
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &#app {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  &#solutions {
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  &#services {
+    background-color: @colorBackgroundService;
+  }
+
+  &#trust {
+    background-color: @colorBackgroundTrust;
+  }
+
+  &#feedback {
+    background-color: white;
+  }
+}

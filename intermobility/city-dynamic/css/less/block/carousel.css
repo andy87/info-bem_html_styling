@@ -1,0 +1,49 @@
+.block__carousel {
+  display: block;
+  min-height: 480px;
+  margin: 60px auto;
+}
+.b_carousel--overlay {
+  display: block;
+}
+.b_carousel--actions {
+  position: relative;
+  display: block;
+}
+.b_carousel--button {
+  position: absolute;
+  top: 100px;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-position: center;
+  border-radius: 50%;
+}
+.b_carousel--button.__prev {
+  left: -5%;
+  background-color: #2B2B2B;
+  background-image: url("../img/_svg/arrow_left.svg");
+}
+.b_carousel--button.__next {
+  right: -5%;
+  background-color: #2B2B2B;
+  background-image: url("../img/_svg/arrow_right.svg");
+}
+.b_carousel--design {
+  display: block;
+  position: absolute;
+  top: auto;
+}
+.b_carousel--design.__left {
+  left: 0;
+}
+.b_carousel--design.__right {
+  right: 0;
+}
+.b_carousel--wrapper {
+  display: block;
+}
+.b_carousel--item {
+  display: block;
+  width: 100%;
+}

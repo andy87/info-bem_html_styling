@@ -1,0 +1,63 @@
+// carousel.less
+
+
+
+.block__carousel {
+  display: block;
+  min-height: 475px;
+  margin: 60px auto 0 auto;
+}
+
+.b_carousel--overlay {
+  display: block;
+}
+
+.b_carousel--actions {
+  position: relative;
+  display: block;
+}
+
+.b_carousel--button {
+  position: absolute;
+  z-index: 5;
+  top: 210px;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  &.__prev {
+    left: -2.5%;
+    background-color: #2B2B2B;
+    background-image: url("/img/_svg/arrow_left.svg");
+  }
+  &.__next {
+    right: -2.5%;
+    background-color: @colorGreen;
+    background-image: url("/img/_svg/arrow_right.svg");
+  }
+}
+
+.b_carousel--design {
+  display: block;
+  position: absolute;
+  top: auto;
+
+  &.__left {
+    left: 0;
+  }
+  &.__right {
+    right: 0;
+  }
+}
+
+.b_carousel--wrapper {
+  display: block;
+}
+
+.b_carousel--item {
+  display: block;
+  width: 100%;
+}

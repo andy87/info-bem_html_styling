@@ -1,0 +1,45 @@
+
+.block__decor > img {
+    position: absolute;
+}
+.b_decor--woman {
+    z-index: 1;
+    top: 0;
+    left: 17%;
+}
+.b_decor--lines {
+    z-index: 2;
+    top: 287px;
+    left: 728px;
+}
+.b_decor--separator {
+    z-index: 5;
+    top: 420px;
+}
+.b_decor--background-top {
+    z-index: 5;
+    height: 1350px;
+    transform: rotate(-15deg);
+    top: -230px;
+    left: 47.55%;
+}
+.b_decor--background-bottom {
+    z-index: 5;
+    top: 725px;
+    left: -6%;
+}
+.b_decor--arrow-1 {
+    z-index: 15;
+    top: 380px;
+    left: 44%;
+}
+.b_decor--arrow-2 {
+    z-index: 6;
+    top: 722px;
+    left: 39.8%;
+}
+
+
+.mod-message .b_decor--arrow-1,
+.mod-message .b_decor--arrow-2 { display: none }
+.mod-message .b_decor--background-bottom{ top: 570px }

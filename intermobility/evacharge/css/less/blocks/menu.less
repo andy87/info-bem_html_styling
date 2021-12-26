@@ -1,0 +1,90 @@
+@media screen and (min-width: @menuReType)
+{
+  .block__menu {
+    display: inline-block;
+  }
+
+  .b_menu--list {
+    display: block;
+    margin-left: 15px;
+  }
+
+  .b_menu--item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .__fixed {
+
+    .b_menu--list {
+      display: inline-block;
+      margin: 30px 15px;
+      padding: 10px 0;
+    }
+
+    .b_menu--link {
+      color: @gray;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+
+      &.__active {
+        opacity: 1;
+      }
+
+      &:hover {
+        color: #0081C3;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.b_menu--link {
+  display: block;
+  color: white;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Poppins-Bold", sans-serif;
+  letter-spacing: -0.4px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  transition: all .3s linear;
+
+  &:hover {
+    color: #0081C3;
+    opacity: 1;
+  }
+
+  &.__active {
+    opacity: 1;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: @menuReType)
+{
+  .block__menu {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .b_menu--list {
+    display: block;
+  }
+
+  .b_menu--item {
+    display: block;
+    padding: 10px 25px;
+    border-bottom: 1px solid #0067a2;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .b_menu--link {
+    color: #0067a2;
+  }
+}

@@ -1,0 +1,49 @@
+.block__social {
+  display: flex;
+  justify-content: space-between;
+  width: 880px;
+}
+
+.b_social--link {
+  display: inline-block;
+  width: 270px;
+  padding: 40px 0;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #fff;
+  transition: all .3s linear;
+
+  &.__vk {
+    display: block;
+    background-color: #4a76a8;
+  }
+  &.__telegram {
+    display: block;
+    background-color: #188cc6;
+  }
+  &.__discord {
+    display: block;
+    background-color: #667bc0;
+  }
+
+  &:hover > * {
+    transform: scale(1.1);
+  }
+
+}
+
+
+.b_social--ico {
+  display: inline-block;
+  height: 70px;
+  width: 90px;
+  margin: 5px auto;
+}
+
+.b_social--name {
+  display: block;
+  color: white;
+  line-height: 25px;
+  font-size: 22px;
+  font-weight: 500;
+}

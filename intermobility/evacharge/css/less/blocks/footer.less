@@ -1,0 +1,88 @@
+.block__footer{
+  position: relative;
+  display: block;
+}
+
+.b_footer--layout {
+  display: inline-block;
+  width: 270px;
+  margin: 10px 25px 0 0;
+}
+
+.b_footer--form {
+  display: block;
+  margin-top: 60px;
+}
+
+.b_footer--img {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.b_footer--text {
+  display: block;
+  color: white;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: @font_2;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.b_footer--title {
+  display: block;
+  margin-bottom: 20px;
+  color: white;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: @font_1;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.b_footer--overlay {
+  position: relative;
+  display: block;
+  width: 270px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.b_footer--input {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  color: @gray;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: @font_1;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  background: transparent;
+  outline: none;
+
+  &:focus{
+    opacity: 1;
+  }
+}
+
+.b_footer--button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 55px;
+  height: 42px;
+  cursor: pointer;
+  background: url("/img/_svg/arrow_right.svg") #0081C3 center no-repeat;
+  transition: all .3s linear;
+
+  &:hover {
+    background-color: #0067a2;
+  }
+}

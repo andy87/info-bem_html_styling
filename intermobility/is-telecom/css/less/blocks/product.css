@@ -1,0 +1,6 @@
+.block__product {
+  display: block;
+}
+.block__product .text {
+  font-size: 17px;
+}

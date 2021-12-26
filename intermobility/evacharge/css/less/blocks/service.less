@@ -1,0 +1,54 @@
+.block__service {
+  display: block;
+}
+
+.b_service--list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.b_service--item {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+
+  &:hover {
+
+    .b_service--layout {
+      top: -10px;
+    }
+  }
+}
+
+.b_service--layout {
+  position: relative;
+  top: 0;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  padding: 50px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all .25s linear;
+}
+
+.b_service--icon {
+  display: block;
+  height: 95px;
+  width: auto;
+}
+
+.b_service--title {
+  display: block;
+  margin: 40px auto;
+  color: @gray;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: @font_2;
+}

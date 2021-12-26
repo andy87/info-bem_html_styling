@@ -1,0 +1,18 @@
+.block__slider {
+  display: block;
+}
+.b_slider--overlay {
+  display: block;
+}
+.b_slider--overlay.__bottom {
+  display: block;
+}
+.b_slider--overlay.__right {
+  display: block;
+}
+.b_slider--icon {
+  display: block;
+}
+.b_slider--link {
+  display: block;
+}

@@ -1,0 +1,63 @@
+.block__config{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.b_config--button {
+  position: relative;
+  display: block;
+  width: 147px;
+  height: 130px;
+  border: 1px solid #091e35;
+  cursor: pointer;
+  background: @background_light_dark;
+
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    .blue_background();
+    opacity: 0;
+    transition: all .3s linear;
+  }
+
+  &:hover,
+  &.__active {
+    &:before{
+      opacity: 1;
+    }
+    .b_config--header {
+      color: white;
+    }
+  }
+}
+
+.b_config--header {
+  position: relative;
+  z-index: 5;
+  display: block;
+  padding: 8px;
+  color: #1d5cac;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  border-bottom:none;
+  border-radius: 0;
+  transition: all .3s linear;
+}
+
+.b_config--description {
+  position: relative;
+  z-index: 5;
+  display: block;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+}

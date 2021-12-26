@@ -1,0 +1,19 @@
+.block__use {
+  display: block;
+}
+.block__use .title {
+  margin-bottom: 60px;
+}
+.b_use--overlay {
+  display: inline-block;
+}
+.b_use--overlay.__left {
+  width: 60%;
+  max-width: 590px;
+  float: left;
+}
+.b_use--overlay.__right {
+  width: 40%;
+  max-width: 460px;
+  float: right;
+}

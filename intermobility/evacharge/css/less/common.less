@@ -1,0 +1,131 @@
+
+BODY {
+  font-family: 'Neo Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+.wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.title {
+  display: block;
+  margin: 15px auto;
+  color: @gray;
+  line-height: 48px;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: @font_1;
+  text-align: center;
+  letter-spacing: -0.95px;
+
+  &.__white{ color: white; }
+  &.__left { text-align: left; }
+}
+
+.text {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 650px;
+  color: @gray;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: @font_1;
+  text-align: center;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+
+  &.__white{ color: white; }
+  &.__left {
+    text-align: left;
+    max-width: 400px;
+    margin: 20px 0;
+  }
+}
+
+.b_page--button {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #0081C3;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s linear;
+
+  SPAN {
+    display: inline-block;
+    padding: 0 10px;
+    color: white;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: @font_1;
+  }
+
+  &:hover{
+    background: #0067a2;
+  }
+}
+
+
+.is-blicked {
+  position: relative;
+  overflow: hidden !important;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, hsla(0, 0%, 100%, .1)), color-stop(20%, hsla(0, 0%, 100%, .2)), to(hsla(0, 0%, 100%, .6)));
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, .1) 10%, hsla(0, 0%, 100%, .2) 20%, hsla(0, 0%, 100%, .6));
+    width: 20px;
+    -webkit-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+    left: -20%;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    -webkit-animation-name: blick;
+    animation-name: blick;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+}
+
+@-webkit-keyframes blick{
+  15%,
+  to{
+    left:110%
+  }
+}
+
+@keyframes blick{
+  15%,
+  to{
+    left:110%
+  }
+}

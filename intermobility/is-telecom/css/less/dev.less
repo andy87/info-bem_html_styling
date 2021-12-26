@@ -1,0 +1,58 @@
+// dev.less
+
+
+
+BODY {
+
+  &.design {
+    background-image: url("/img/design/site.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    * {
+      background-image: none !important;
+      background-color: transparent !important;
+    }
+
+    .b_page--item {
+      overflow: hidden;
+
+      &#welcome {
+        height: 800px;
+      }
+
+      &#products {
+        height: 876px;
+      }
+
+      &#solutions {
+        height: 675px;
+      }
+
+      &#platforms {
+        height: 570px;
+      }
+
+      &#license {
+        height: 484px;
+      }
+
+      &#news {
+        height: 586px;
+      }
+
+      &#brands {
+        height: 450px;
+      }
+
+      &#feedback {
+        height: 755px;
+        padding-top: 70px;
+      }
+    }
+
+    .block__footer {
+      height: 220px;
+    }
+  }
+}

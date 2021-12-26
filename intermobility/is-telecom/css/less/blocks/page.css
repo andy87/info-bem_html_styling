@@ -1,0 +1,36 @@
+.block__page {
+  display: block;
+}
+.b_page--item {
+  position: relative;
+  display: block;
+  padding-top: 99px;
+  padding-bottom: 99px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.b_page--item#welcome {
+  height: 100vh;
+  min-height: 800px;
+  background-image: url("../img/welcome/bg/bg_welcome_ru.png");
+}
+.b_page--item#welcome .wrapper {
+  height: 100%;
+  width: 100%;
+}
+.b_page--item#solutions {
+  background-image: url("../img/common/bg-contacts.png");
+  background-color: #F9F9F9;
+  background-size: 62%;
+}
+.b_page--item#platforms {
+  background-color: #52A662;
+  padding: 0;
+}
+.b_page--item#news {
+  background-image: url("../img/news/bg/news_background.png");
+}
+.b_page--item#partners {
+  background-color: #52A662;
+}

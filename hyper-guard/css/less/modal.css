@@ -1,0 +1,35 @@
+.block__modal {
+  display: none;
+}
+.b_modal--overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+.b_modal--window {
+  display: none;
+  min-width: 520px;
+  background: #011127 url("../img/background/modal.png") right bottom no-repeat;
+}
+.b_modal--header {
+  display: block;
+}
+.b_modal--title {
+  display: block;
+}
+.b_modal--closer {
+  display: block;
+}
+.b_modal--body {
+  display: block;
+}
+.b_modal--button {
+  display: block;
+}
+/*# sourceMappingURL=modal.css.map */

@@ -1,0 +1,120 @@
+// platform.less
+
+
+
+.block__platform {
+  position: relative;
+  display: block;
+  padding: 100px 0 40px 0;
+
+  .title {
+    margin: 10px 0;
+  }
+
+  .text {
+    margin: 30px 0;
+    width: 100%;
+    max-width: 540px;
+  }
+}
+
+.b_platform--decor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.b_platform--list {
+  display: block;
+  margin-top: 40px;
+}
+
+.b_platform--item {
+  position: relative;
+  display: block;
+  margin-bottom: 60px;
+  padding-left: 60px;
+  width: 100%;
+  max-width: 470px;
+  counter-increment: myCounter;
+
+  &::before {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    content:counter(myCounter);
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    padding: 10px 0;
+    color: white;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: @font_2;
+    text-align: center;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+}
+
+.b_platform--text {
+  display: block;
+  color: white;
+  line-height: 24px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: @font_2;
+}
+
+.b_platform--mockup {
+  position: absolute;
+  z-index: 7;
+  right: 25px;
+  bottom: 0;
+  display: block;
+}
+
+.b_platform--logo {
+  position: absolute;
+  z-index: 5;
+  display: block;
+  opacity: .1;
+
+  &.__first {
+    top: 70px;
+    right: -270px;
+    animation: Orbita 12s linear infinite;
+  }
+
+  &.__second {
+    top: 215px;
+    right: 530px;
+    animation: Orbita2 12s linear infinite;
+  }
+}
+
+@keyframes Orbita {
+  from {
+    -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);
+  }
+}
+
+@keyframes Orbita2 {
+  from {
+    -webkit-transform: scale(0.65) rotate(0deg) translateX(15px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: scale(0.65) rotate(-360deg) translateX(15px) rotate(360deg);
+  }
+}

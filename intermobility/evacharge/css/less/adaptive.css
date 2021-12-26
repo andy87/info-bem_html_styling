@@ -1,0 +1,153 @@
+@media screen and (max-width: 980px) {
+  BODY .title.__left {
+    text-align: center;
+    max-width: 100%;
+  }
+  BODY .text.__left {
+    text-align: center;
+    max-width: 100%;
+  }
+  .block__page .b_page--item {
+    padding: 60px 15px 35px 15px !important;
+  }
+  .block__page .b_page--item#welcome {
+    height: auto;
+    padding-top: 25px;
+    background-position: bottom right;
+    background-size: cover;
+  }
+  .block__welcome .b_welcome--logo {
+    width: 80px;
+  }
+  .block__welcome .b_welcome--title {
+    margin: 25px 0;
+    font-size: 39px;
+    text-align: center;
+  }
+  .block__welcome .b_welcome--text {
+    max-width: 100%;
+    padding: 5px 5%;
+    font-size: 16px;
+    text-align: center;
+  }
+  .block__welcome .b_welcome--button {
+    position: relative;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    display: block;
+    width: 235px;
+    margin: 25px auto;
+  }
+  .block__benefit .b_benefit--list {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .block__benefit .b_benefit--item {
+    max-width: inherit;
+  }
+  .block__task {
+    padding: 0;
+  }
+  .block__task .b_task--overlay {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .block__task .b_task--overlay:last-child {
+    margin-bottom: 0;
+  }
+  .block__task .b_task--img {
+    display: none;
+  }
+  .block__service .b_service--list {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .block__service .b_service--item {
+    max-width: inherit;
+  }
+  .block__service .b_quote--actions {
+    display: none;
+  }
+  .block__service .b_service--title BR {
+    display: none;
+  }
+  .block__footer .b_footer--layout {
+    display: block;
+    width: 100%;
+  }
+  .block__social {
+    position: relative;
+    top: 0;
+    margin-top: 25px;
+  }
+  .block__social .b_social--list {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 720px) {
+  BODY .title {
+    line-height: 32px;
+    font-size: 28px;
+  }
+  BODY .text {
+    margin: 10px auto;
+    max-width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .block__task .b_task--overlay {
+    display: block;
+    width: 100%;
+  }
+  .block__task .b_task--img {
+    display: none;
+  }
+  .block__quote .b_quote--title {
+    font-size: 12px;
+  }
+  .block__quote .b_quote--text {
+    line-height: 29px;
+    font-size: 23px;
+  }
+  .block__quote .b_quote--photo {
+    margin: 5px auto 10px auto;
+  }
+  .block__quote .b_quote--author {
+    margin: 10px 0;
+  }
+  .block__quote .b_quote--position {
+    margin-top: 10px;
+  }
+  .block__news .b_news--list {
+    flex-direction: column;
+  }
+  .block__news .b_news--item {
+    max-width: inherit;
+  }
+  .block__news .b_news--img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .block__form .b_form--row {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .block__page .b_page--item {
+    min-width: 320px;
+  }
+  .block__welcome .b_welcome--title {
+    margin: 30px 0 15px 0;
+    line-height: 42px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .block__welcome .b_welcome--text {
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=adaptive.css.map */

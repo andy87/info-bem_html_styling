@@ -1,0 +1,458 @@
+// adaptive.less
+
+
+
+@media screen and (max-width: 1280px)
+{
+  BODY {
+    .wrapper {
+      padding: 0 15px;
+    }
+  }
+
+  .block__lang {
+    right: 15px;
+  }
+
+  .block__carousel {
+
+    .b_carousel--button {
+
+      &.__prev { left: 0; }
+      &.__next { right: 0; }
+    }
+  }
+
+  .block__solutions {
+
+    .b_solution--item {
+      width: 30%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px)
+{
+
+}
+
+@media screen and (max-width: 1024px)
+{
+  .block__page {
+
+    .b_page--item {
+      z-index: 1;
+      padding-top: 75px;
+      padding-bottom: 55px;
+
+      &#welcome {
+        min-height: 100%;
+        padding-top: 10px;
+      }
+
+      &#platforms {
+        &:after {
+          top: -40px;
+          height: 40px;
+        }
+        &:before {
+          top: -40px;
+          height: 40px;
+        }
+      }
+
+      &#brands {
+        &:after {
+          bottom: -40px;
+          height: 40px;
+        }
+        &:before {
+          bottom: -40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .block__carousel {
+    margin: 30px auto 0 auto;
+  }
+
+  .block__use
+  {
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+
+  .block__solutions {
+
+    .b_solution--list {
+      flex-direction: column;
+      margin: 30px auto;
+
+      &.__duo {
+
+        .b_solution--item {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .b_solution--item {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
+
+    .b_solution--title {
+      margin-bottom: 15px;
+
+      BR {
+        display: none;
+      }
+    }
+
+    .b_solution--text {
+      margin-top: 15px;
+    }
+
+    .b_solution--img {
+      height: 99px;
+      width: auto;
+    }
+  }
+
+  .block__use {
+
+    .b_use--overlay {
+      float: none;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .block__license {
+
+    .b_license--img {
+      float: left;
+      margin-right: 20px;
+    }
+    .b_license--text {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .b_license--link {
+      display: inline-block;
+    }
+  }
+
+  .block__news {
+
+    .b_news--header {
+      display: block;
+      text-align: center;
+      line-height: 30px;
+      font-size: 21px;
+    }
+
+    .b_news--title {
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .b_news--text {
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .b_news--button {
+      position: relative;
+      bottom: auto;
+      top: 20px;
+      margin: 0 auto;
+      max-width: 256px;
+    }
+  }
+
+  .block__footer {
+
+    &:before {
+      top: -40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 940px)
+{
+  .block__platform {
+
+    .b_platform--mockup {
+      height: 300px;
+      width: auto;
+    }
+  }
+
+  .block__feedback {
+
+    .b_feedback--overlay {
+      width: 100%;
+      float: none;
+    }
+
+    .b_feedback--overlay.__map {
+      margin-bottom: 0;
+    }
+  }
+
+  .block__slide {
+
+    .b_slide--overlay {
+      min-height: 512px;
+    }
+
+    .b_slide--button.__icon {
+      float: none;
+      margin-top: 10px;
+    }
+  }
+
+  .block__form {
+
+    .b_form--notify {
+      text-align: center;
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .b_form--button {
+      width: 250px;
+      margin: 0 auto;
+    }
+
+    .b_form--checkbox {
+      position: relative;
+      top: 2px;
+      left: -5px;
+    }
+  }
+
+  .block__footer {
+    margin-top: 10px;
+
+    .block__menu {
+      display: none;
+    }
+
+    .b_footer--logo {
+      position: relative;
+      top: 0;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .b_footer--overlay {
+      position: relative;
+
+      &.__center {
+        display: none;
+      }
+      &.__right {
+        display: block;
+        margin: 20px auto 0 auto;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px)
+{
+  BODY {
+
+    .block__page {
+
+      .title {
+        font-size: 28px;
+        line-height: 35px;
+      }
+      .text {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .title, .text {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .block__page {
+
+    .b_page--item {
+
+      &#solutions {
+        background-size: contain;
+      }
+    }
+  }
+
+  .block__welcome {
+
+    .b_welcome--text {
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .block__carousel {
+
+    .b_carousel--button {
+      width: 36px;
+      height: 36px;
+      background-size: 50%;
+      opacity: .4;
+
+      &.__prev { left: -9px; }
+      &.__next { right: -9px; }
+    }
+  }
+
+  .block__slide {
+
+    .b_slide--overlay {
+      padding: 35px 25px 35px 30px;
+    }
+
+    .b_slide--title {
+      line-height: 22px;
+      font-size: 18px;
+
+      BR { display: none }
+    }
+
+    .b_slide--text {
+      line-height: 20px;
+      font-size: 13px;
+    }
+
+    .b_slide--button {
+      margin: 10px 0;
+      width: 100%;
+
+      &.__icon {
+        padding-left: 80px;
+        text-align: left;
+      }
+    }
+  }
+
+  .block__solutions {
+
+    .b_solution--title{
+      line-height: 26px;
+      font-size: 22px;
+    }
+
+    .b_solution--text{
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .block__platform {
+
+    .b_platform--mockup {
+      display: none;
+    }
+
+    .b_platform--logo {
+      &.__first {
+        right: -10%;
+      }
+      &.__second {
+        left: -10%;
+      }
+    }
+  }
+
+  .block__feedback
+  {
+    .text {
+      margin: 10px 0;
+    }
+
+    .b_feedback--overlay.__form{
+      margin: 10px 0;
+    }
+  }
+
+  .block__form {
+
+    .b_form--row {
+      flex-direction: column;
+    }
+
+    .b_form--label {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .b_form--notify {
+      padding-left: 0;
+      margin: 15px 0;
+    }
+
+    .b_form--input{
+      padding: 5px 20px;
+      min-height: 40px;
+      line-height: 30px;
+      font-size: 13px;
+    }
+
+    .b_form--textarea {
+      min-height: 50px;
+      font-size: 13px;
+    }
+
+    .b_form--button {
+      min-height: 36px;
+      padding: 8px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+
+  .block__platform {
+
+    .b_platform--logo {
+      &.__first {
+        display: none;
+      }
+    }
+  }
+
+  .block__brand {
+
+    .b_brand--item {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .b_brand--layout {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}

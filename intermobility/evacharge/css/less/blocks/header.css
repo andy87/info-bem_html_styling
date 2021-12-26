@@ -1,0 +1,115 @@
+@media screen and (min-width: 920px) {
+  .block__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 1px;
+    transition: all 0.2s linear;
+  }
+  .block__header .wrapper {
+    max-width: 1290px;
+  }
+  .block__header.__fixed {
+    position: fixed;
+    z-index: 777;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  .block__header.__fixed .wrapper {
+    height: 100%;
+    text-align: right;
+  }
+  .block__header.__fixed .b_header--overlay {
+    display: inline-block;
+    margin-top: auto;
+  }
+  .block__header.__fixed .b_header--link {
+    display: block;
+  }
+  .block__header.__fixed .b_header--button {
+    display: inline-block;
+  }
+  .b_header--burger {
+    display: none;
+  }
+  .b_header--overlay {
+    display: block;
+    margin-top: 85px;
+    text-align: right;
+  }
+  .b_header--link {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 70px;
+  }
+  .b_header--img {
+    display: block;
+  }
+  .b_header--button {
+    display: none;
+    width: 160px;
+    margin: 25px 15px 25px 30px;
+    padding: 15px 0;
+  }
+}
+@media screen and (max-width: 999px) {
+  .block__header.__fixed .b_header--link {
+    width: 80px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 920px) {
+  .block__header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .block__header .wrapper {
+    position: relative;
+    height: 0;
+    width: 100%;
+  }
+  .block__header .b_header--overlay {
+    position: fixed;
+    top: 0 ;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    padding: 25px 0;
+    background: #E2E2E2;
+    transition: all 0.3s linear;
+  }
+  .block__header.__active .wrapper {
+    z-index: 1;
+  }
+  .block__header.__active .b_header--overlay {
+    left: 0;
+    right: 0;
+  }
+  .b_header--burger {
+    position: absolute;
+    z-index: 788;
+    top: 23px;
+    right: 15px;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url(../img/_svg/burger.svg) center center no-repeat;
+    background-size: contain;
+  }
+  .b_header--link {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .b_header--button {
+    display: block;
+    width: 245px;
+    margin: 25px auto;
+  }
+}

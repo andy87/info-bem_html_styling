@@ -1,0 +1,47 @@
+.block__welcome {
+  display: block;
+  padding-top: 100px;
+}
+
+
+.b_welcome--logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.b_welcome--title {
+  display: block;
+  margin: 65px 0 25px 0;
+  color: white;
+  line-height: 60px;
+  font-size: 52px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: @font_1;
+}
+
+.b_welcome--text {
+  display: block;
+  width: 100%;
+  max-width: 510px;
+  color: white;
+  line-height: 24px;
+  font-size: 18px;
+  font-family: @font_1;
+  text-align: justify;
+}
+
+.b_welcome--button {
+  position: absolute;
+  bottom: -180px;
+  left: 0;
+}
+
+@media screen and (max-width: @menuReType)
+{
+  .b_welcome--logo {
+    display: none;
+  }
+}

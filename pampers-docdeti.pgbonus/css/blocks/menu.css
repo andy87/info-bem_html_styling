@@ -1,0 +1,22 @@
+
+.block__menu {
+    position: relative;
+}
+.b_menu--wrapper {
+    display: inline-block;
+}
+.b_menu--item {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.b_menu--link {
+    padding-bottom: 10px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+}
+.b_menu--link:hover {
+    text-decoration: underline;
+}

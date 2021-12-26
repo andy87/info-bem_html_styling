@@ -1,0 +1,24 @@
+.block__range {
+  display: block;
+  position: relative;
+  top: -8px;
+
+  .slider {
+    width: 100% !important;
+
+    &.slider-horizontal .slider-track {
+      height: 8px;
+      background: @background_form_element;
+    }
+    .slider-selection{
+      background: radial-gradient(ellipse at center, #2366b6 0%,#0d4290 100%);
+    }
+
+    .round {
+      width: 18px;
+      height: 18px;
+      background: radial-gradient(ellipse at center, #2366b6 0%,#0d4290 100%);
+    }
+  }
+
+}

@@ -1,0 +1,55 @@
+.block__filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.b_filter--button {
+  position: relative;
+  display: block;
+  width: auto;
+  padding: 40px 25px;
+  cursor: pointer;
+  background: #0c2948;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background: linear-gradient(25deg, #164487 0%,#0c2948 50%);
+    transition: all .3s linear;
+  }
+
+  &.__active {
+    .blue_background();
+  }
+  &:hover:not(.__active):before{
+    opacity: 1;
+  }
+}
+
+.b_filter--ico {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+
+.b_filter--title {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  color: white;
+  line-height: 30px;
+  font-size: 22px;
+  font-weight: 800;
+}

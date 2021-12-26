@@ -1,0 +1,88 @@
+// slide.less
+
+
+.block__slide {
+  display: block;
+}
+
+.b_slide--overlay {
+  position: relative;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 950px;
+  min-height: 476px;
+  margin: 0 auto;
+  padding: 80px 50px 80px 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.b_slide--body {
+  display: block;
+}
+
+.b_slide--title {
+  display: block;
+  color: white;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: @font_2;
+}
+
+.b_slide--text {
+  display: block;
+  //margin: 60px 0;
+  margin-top: 25px;
+  color: white;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: @font_2;
+}
+
+.b_slide--footer {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.b_slide--button {
+  display: inline-block;
+  margin-right: 30px;
+  font-family: @font_2;
+  padding-left: 45px;
+  padding-right: 45px;
+  min-width: 200px;
+
+  &.__icon {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 5px;
+    margin-right: 0;
+    text-align: right;
+    min-width: 200px;
+    background-color: transparent;
+    border: none;
+    float: right;
+
+    I {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      top: 0;
+      left: 15px;
+      border: 3px solid white;
+      border-radius: 50%;
+      background-image: url("/img/_svg/play.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

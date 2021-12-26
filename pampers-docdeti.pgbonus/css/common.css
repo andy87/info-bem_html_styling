@@ -1,0 +1,42 @@
+
+BODY {
+    background-color: #f2fdfa;
+    min-width: 320px;
+}
+
+BODY, BODY * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Harmonia", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #00517A;
+}
+
+A {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+#content{
+    position: relative;
+    overflow: hidden;
+}
+#resources { display: none }
+
+.none { display: none !important; }
+
+/* live elements */
+.b_decor--woman,
+.b_decor--lines,
+.b_decor--background-bottom,
+.b_welcome--img.__present,
+.block__heart,
+.b_form--button,
+.b_contact--img.__baby,
+.b_contact--img.__toy {
+    transition: all .25s linear;
+}

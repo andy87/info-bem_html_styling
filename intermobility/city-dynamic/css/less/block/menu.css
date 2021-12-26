@@ -1,0 +1,22 @@
+.block__menu {
+  display: block;
+}
+.b_menu--list {
+  display: block;
+}
+.b_menu--item {
+  display: inline-block;
+}
+.b_menu--link {
+  display: block;
+  opacity: 0.8;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}

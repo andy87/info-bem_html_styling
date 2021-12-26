@@ -1,0 +1,21 @@
+.block__content {
+    background-image: url("../../img/background_welcome_02_img.png");
+    background-repeat: no-repeat;
+}
+.b_content--layout.__welcome {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 115px;
+}
+.b_content--layout.__contact {
+    position: relative;
+    z-index: 10;
+}
+.b_content--img-wave{
+    position: relative;
+    z-index: 10;
+}
+
+.mod-message .b_content--layout.__welcome {
+    margin-bottom: 270px;
+}

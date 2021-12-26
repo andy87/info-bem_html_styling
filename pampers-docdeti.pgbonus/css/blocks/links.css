@@ -1,0 +1,33 @@
+
+.block__links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.b_links--item {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #003DAF;
+    text-align: center;
+    text-decoration: none;
+}
+.b_links--item.__youtube{
+    width: 42px;
+}
+.b_links--item:hover {
+    text-decoration: underline;
+}
+.b_links--item.__help  .b_links--icon {
+    display: block;
+    margin: 0 auto;
+}
+.b_links--item.__help {
+    position: absolute;
+    right: 1px;
+    top: 32px;
+    width: auto;
+    height: auto;
+}

@@ -1,0 +1,45 @@
+.block__alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.b_alert--window {
+  position: fixed;
+  z-index: 777;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  padding: 10px 25px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #230D55;
+  border-radius: 7px;
+}
+.b_alert--closer {
+  position: relative;
+  top: -5px;
+  right: -20px;
+  color: white;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  width: 24px;
+  height: 24px;
+  float: right;
+  border-radius: 5px;
+  background-color: #230D55;
+  cursor: pointer;
+}
+.b_alert--text {
+  display: block;
+  color: #230D55;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+}

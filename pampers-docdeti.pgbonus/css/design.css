@@ -1,0 +1,27 @@
+BODY.design.desktop {
+    background-position:  top center;
+}
+
+BODY.design.desktop {
+    min-height: 1715px;
+    background-image: url("../img/design/desktop.png");
+}
+BODY.design.mobile {
+    min-height: 2440px;
+    background-image: url("../img/design/mobile.png");
+}
+
+BODY.design.mobile:not('off') *,
+BODY.design.desktop:not('off') * {
+    background-image: none;
+    background-color: transparent;
+}
+BODY.design.mobile IMG,
+BODY.design.desktop IMG {
+    opacity: 0.5;
+}
+
+BODY.design.off,
+BODY.design.mobile.desktop {
+    background-image: none;
+}

@@ -1,0 +1,135 @@
+// form.less
+
+
+
+.block__form {
+  display: block;
+  font-size: 0;
+}
+
+.b_form--row {
+  display: flex;
+  justify-content: space-between;
+
+  .b_form--label {
+    display: inline-block;
+    width: 48%;
+  }
+}
+
+.b_form--label {
+  display: block;
+  margin-bottom: 20px;
+  background-color: @colorBackgroundLabel;
+  border-radius: 4px;
+}
+
+.block__form--text() {
+  padding: 15px 20px;
+  color: #333;
+  line-height: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: @font_2;
+  letter-spacing: -0.15px;
+  background: transparent;
+
+  &:active {
+    outline: @colorGreen;
+  }
+
+  &:active,
+  &:focus,
+  &:valid {
+    opacity: 1;
+  }
+}
+
+.b_form--input {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  line-height: 50px;
+  margin: 0;
+  opacity: 0.4;
+  .block__form--text();
+}
+
+.b_form--textarea {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  opacity: 0.4;
+  .block__form--text();
+}
+
+.b_form--notify {
+  position: relative;
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  color: #333;
+  line-height: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: @font_2;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  opacity: .6;
+  cursor: pointer;
+
+  A {
+    display: block;
+    color: @colorGreen;
+    text-decoration: underline;
+  }
+
+  &.__blink{
+    animation: form__notify 1.25s linear ;
+  }
+}
+
+@-webkit-keyframes form__notify {
+  from {border-color: #f00;}
+  to {border-color: #fff;}
+}
+@keyframes form__notify {
+  from {border-color: #f00;}
+  to {border-color: #fff;}
+}
+
+
+.b_form--checkbox {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: inline-block;
+  cursor: pointer;
+
+  &:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+    background-image: none;
+    background-color: @colorGreen;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+  }
+
+  &:checked {
+    &:after{
+      background-image: url("/img/_svg/checkbox_checked.svg");
+    }
+  }
+}
+
+.b_form--button {
+  display: block;
+  width: 235px;
+}

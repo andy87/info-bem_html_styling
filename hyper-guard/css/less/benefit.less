@@ -1,0 +1,96 @@
+.block__benefit {
+  display: block;
+}
+
+.b_benefit--wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.b_benefit--item {
+  position: relative;
+  display: inline-block;
+  width: 262px;
+  padding: 25px 15px;
+  overflow: hidden;
+  .hover_background();
+
+  &:nth-child(1) .b_benefit--ball {
+    top: 5%;
+    left: 23%;
+  }
+  &:nth-child(2) .b_benefit--ball {
+    top: 16%;
+    left: 46%;
+  }
+  &:nth-child(3) .b_benefit--ball {
+    top: 20%;
+    left: 25%;
+  }
+  &:nth-child(4) .b_benefit--ball {
+    top: 10%;
+    left: 38%;
+  }
+}
+
+.b_benefit--layout {
+  display: block;
+  position: relative;
+  width: auto;
+  max-width: 260px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.b_benefit--ball {
+  position: absolute;
+  z-index: 4;
+  display: block;
+  height: 85px;
+  width: auto;
+  top: 0;
+  left: 0;
+}
+
+.b_benefit--icon {
+  position: relative;
+  z-index: 5;
+  display: block;
+  margin: 5px auto;
+  max-height: 105px;
+  width: auto;
+  max-width: 110px;
+}
+
+.b_benefit--title {
+  display: block;
+  min-height: 52px;
+  padding: 0 20px;
+  color: white;
+  line-height: 26px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.b_benefit--text {
+  position: relative;
+  z-index: 3;
+  display: block;
+  margin: 10px 0;
+  color: #71859d;
+  line-height: 16px;
+  font-size: 13px;
+}
+
+.b_benefit--img {
+  position: absolute;
+  display: block;
+  height: 300px;
+  width: 300px;
+  top: 45px;
+  right: -110px;
+  opacity: .05;
+}

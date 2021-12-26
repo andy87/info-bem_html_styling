@@ -1,0 +1,58 @@
+// clients.less
+
+.block__brand {
+  display: block;
+  font-size: 0;
+
+  .owl-dots{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .owl-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 2px;
+      background: white;
+      opacity: .2;
+      border-radius: 50%;
+      outline: none;
+      cursor: pointer;
+
+      &.active {
+        margin: 0;
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.b_brand--list {
+  display: block;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.b_brand--item {
+  display: inline-block;
+  width: 190px;
+}
+
+.b_brand--layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 0 20px;
+  padding: 0 20px;
+}
+
+.b_brand--img {
+  display: block;
+  max-width: 140px;
+  max-height: 80px;
+  object-fit: contain;
+}

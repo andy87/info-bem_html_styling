@@ -1,0 +1,153 @@
+// common.less
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  line-height: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+HTML {
+  display: block;
+}
+
+BODY {
+  display: block;
+  font-size: 62.5%;
+  line-height: 1.2rem;
+  font-family: @font;
+
+  .none, .hidden {
+    display: none !important;
+  }
+}
+
+A { cursor: pointer }
+
+
+
+.wrapper {
+  display: block;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.title {
+  display: block;
+  color: #333333;
+  line-height: 50px;
+  font-size: 44px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: @font;
+  text-align: center;
+  letter-spacing: -0.76px;
+}
+
+.text {
+  display: block;
+  margin: 15px auto;
+  color: #787878;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: @font_2;
+  text-align: center;
+}
+
+.t-left { text-align: left; }
+.t-white { color: white }
+
+
+.btn {
+  display: inline-block;
+  min-width: 150px;
+  min-height: 50px;
+  padding: 15px;
+  color: white;
+  line-height: 20px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #52A662;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &.btn-sm {
+    min-height: 38px;
+    padding: 15px;
+  }
+
+  &.btn-border {
+    @color : #03A57B;
+    color: @color;
+    background-color: transparent;
+    border: 2px solid @color;
+  }
+
+  &.btn-white{
+    color: white;
+    border-color: white;
+  }
+}
+
+.is-blinked {
+  position: relative;
+  overflow: hidden !important;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, hsla(0, 0%, 100%, .1)), color-stop(20%, hsla(0, 0%, 100%, .2)), to(hsla(0, 0%, 100%, .6)));
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, .1) 10%, hsla(0, 0%, 100%, .2) 20%, hsla(0, 0%, 100%, .6));
+    width: 20px;
+    -webkit-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+    left: -20%;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    -webkit-animation-name: blink;
+    animation-name: blink;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+}
+
+@-webkit-keyframes blink{
+  15%,
+  to{
+    left:110%
+  }
+}
+
+@keyframes blink{
+  15%,
+  to{
+    left:110%
+  }
+}
+
+.i-enter{
+  background-image: url("/img/_svg/icon_enter.svg");
+}
+
+.clearFix:after {
+  display: block;
+  content: '';
+  clear: both;
+}

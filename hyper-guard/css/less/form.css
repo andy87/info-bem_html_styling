@@ -1,0 +1,34 @@
+.block__form {
+  display: block;
+}
+.b_form--row {
+  display: block;
+}
+.b_form--tab {
+  display: block;
+}
+.b_form--tab.__active {
+  display: block;
+}
+.b_form--title {
+  display: block;
+}
+.b_form--radio {
+  display: block;
+}
+.b_form--radio.__inline {
+  display: block;
+}
+.b_form--layout {
+  display: block;
+}
+.b_form--select {
+  display: block;
+}
+.b_form--label {
+  display: block;
+}
+.b_form--button {
+  display: block;
+}
+/*# sourceMappingURL=form.css.map */

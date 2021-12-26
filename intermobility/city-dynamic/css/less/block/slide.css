@@ -1,0 +1,29 @@
+.block__slide {
+  display: block;
+}
+.b_slide--overlay {
+  display: block;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 80px 70px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.b_slide--body {
+  display: block;
+}
+.b_slide--title {
+  display: block;
+}
+.b_slide--text {
+  display: block;
+  color: white;
+}
+.b_slide--footer {
+  display: block;
+}
+.b_slide--button {
+  display: block;
+}

@@ -1,0 +1,28 @@
+
+.block__contact {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.b_contact--text {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+}
+.b_contact--img {
+    position: absolute;
+}
+.b_contact--img.__baby{
+    top: 75px;
+    left: 495px;
+}
+.b_contact--img.__toy{
+    top: 220px;
+    left: 940px;
+}
+
+.mod-message .b_contact--img.__baby { left: 36% }
+.mod-message .b_contact--img.__toy {  left: 78% }

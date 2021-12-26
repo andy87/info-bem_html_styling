@@ -1,0 +1,320 @@
+// adaptive.less
+
+
+
+// code
+@media screen and (max-width: 1270px)
+{
+
+  BODY {
+    .wrapper {
+      padding: 0 15px;
+    }
+  }
+
+
+  .block__carousel {
+
+    .b_carousel--item {
+      padding: 0 80px;
+    }
+
+    .b_carousel--button {
+
+      &.__prev {
+        left: 0;
+      }
+      &.__next {
+        right: 0;
+      }
+    }
+
+    .b_carousel--design {
+
+      &.__left {
+        left: -10%;
+      }
+      &.__right {
+        right: -10%;
+      }
+    }
+  }
+
+
+  .block__slide {
+
+    .b_slide--button {
+      margin-right: 20px;
+      min-width: 200px;
+
+      &.__icon {
+        padding-left: 80px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px)
+{
+  BODY {
+    .title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    .text {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+
+  .block__welcome {
+
+    .b_welcome--wrapper{
+      text-align: center;
+    }
+    .b_welcome--text {
+      width: 100%;
+    }
+  }
+
+
+  .block__slide {
+
+    .b_slide--overlay {
+      padding: 5px 30px;
+    }
+
+    .b_slide--footer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .b_slide--button {
+      margin-bottom: 20px;
+      float: none;
+    }
+  }
+
+
+  .block__solution {
+
+    .b_solution--list {
+      display: block;
+
+      .b_solution--item {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      &.__dual{
+        .b_solution--item {
+          display: block;
+          width: 100%;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+
+  .block__service {
+
+    .b_service--item {
+      width: 100%;
+    }
+  }
+
+  .block__footer {
+    height: auto;
+    padding: 20px;
+
+    .b_footer--img {
+      margin: 0;
+    }
+    .b_footer--text {
+      margin: 0;
+      align-self: center;
+      BR { display: none }
+    }
+    .b_footer--layout {
+
+      &.__left {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-content: center;
+      }
+      &.__right {
+        display: none;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 720px)
+{
+  .block__carousel {
+
+    .b_carousel--overlay {
+      display: none;
+    }
+
+    .b_carousel--item {
+      padding: 0 50px;
+    }
+  }
+
+
+  .block__slide {
+
+    .b_slide--title {
+      margin: 15px auto;
+      font-size: 18px;
+    }
+    .b_slide--text{
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  }
+
+
+  .block__service {
+
+    .b_service--item {
+      width: 100%;
+      padding: 0;
+    }
+
+    .b_service--title {
+      padding-left: 60px;
+      margin-bottom: 20px;
+    }
+
+    .b_service--layout {
+      width: 50px;
+      height: 50px;
+    }
+
+    .b_service--ico {
+      margin: 13px;
+      width: 24px;
+      height: 26px;
+    }
+
+    .b_service--text {
+      font-size: 14px;
+    }
+  }
+
+  .block__trust {
+
+    .b_trust--overlay {
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .block__form {
+
+    .b_form--wrapper {
+      display: block;
+    }
+    .b_form--layout{
+      width: 100%;
+    }
+
+    .b_form--button {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+
+  .block__footer {
+
+    .b_footer--layout {
+
+      &.__left {
+        display: block;
+      }
+    }
+
+    .b_footer--img {
+      margin: 15px auto;
+    }
+    .b_footer--text {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+  .block__page {
+
+    .b_page--item{
+
+      &#welcome {
+        min-height: auto;
+      }
+      &#trust {
+        padding-top: 100px;
+      }
+    }
+
+  }
+
+
+  .block__header {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+
+  .block__carousel {
+
+    .b_carousel--button {
+      width: 42px;
+      height: 42px;
+      background-size: 50%;
+
+      &.__prev { left: -10px }
+      &.__next { right: -10px }
+    }
+    .b_carousel--item {
+      padding: 0 5px;
+    }
+  }
+
+  .block__slide {
+
+    .b_slide--overlay {
+      background-position: 70% 0;
+
+      &.__fix-0 {
+        background-position: 0 0;
+      }
+      &.__fix-10 {
+        background-position: 10% 0;
+      }
+      &.__fix-100 {
+        background-position: 100% 0;
+      }
+    }
+
+  }
+
+
+  .block__service {
+
+    .b_service--title {
+      font-size: 16px;
+    }
+  }
+
+}

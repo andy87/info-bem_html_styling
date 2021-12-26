@@ -1,0 +1,38 @@
+.block__solution {
+  display: block;
+}
+.b_solution--list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+.b_solution--item {
+  display: inline-block;
+  width: 30%;
+}
+.b_solution--title {
+  display: block;
+  color: #333;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.b_solution--text {
+  display: block;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+  display: flex;
+  align-items: center;
+  color: #333333;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}

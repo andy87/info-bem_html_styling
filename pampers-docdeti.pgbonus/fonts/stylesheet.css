@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Harmonia";
+    src: url("HarmoniaSansProCyr-Regular.eot");
+    src: local("Harmonia Sans Pro Cyr"), local("HarmoniaSansProCyr-Regular"), url("HarmoniaSansProCyr-Regular.eot?#iefix") format("embedded-opentype"), url("HarmoniaSansProCyr-Regular.woff2") format("woff2"), url("HarmoniaSansProCyr-Regular.woff") format("woff"), url("HarmoniaSansProCyr-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Harmonia";
+    src: url("HarmoniaSansProCyr-Italic.eot");
+    src: local("Harmonia Sans Pro Cyr Italic"), local("HarmoniaSansProCyr-Italic"), url("HarmoniaSansProCyr-Italic.eot?#iefix") format("embedded-opentype"), url("HarmoniaSansProCyr-Italic.woff2") format("woff2"), url("HarmoniaSansProCyr-Italic.woff") format("woff"), url("HarmoniaSansProCyr-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Harmonia";
+    src: url("HarmoniaSansProCyr-Bold.eot");
+    src: local("Harmonia Sans Pro Cyr Bold Italic"), local("HarmoniaSansProCyr-BoldIt"), url("HarmoniaSansProCyr-Bold.eot?#iefix") format("embedded-opentype"), url("HarmoniaSansProCyr-Bold.woff2") format("woff2"), url("HarmoniaSansProCyr-Bold.woff") format("woff"), url("HarmoniaSansProCyr-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Harmonia";
+    src: url("HarmoniaSansProCyr-BoldIt.eot");
+    src: local("Harmonia Sans Pro Cyr Bold Italic"), local("HarmoniaSansProCyr-BoldIt"), url("HarmoniaSansProCyr-BoldIt.eot?#iefix") format("embedded-opentype"), url("HarmoniaSansProCyr-BoldIt.woff2") format("woff2"), url("HarmoniaSansProCyr-BoldIt.woff") format("woff"), url("HarmoniaSansProCyr-BoldIt.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "PampScript";
+    src: url("pampscript.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Pampers";
+    src: url("PampersScript-Italic.eot?#iefix") format("embedded-opentype"), url("PampersScript-Italic.otf") format("opentype"), url("PampersScript-Italic.woff") format("woff"), url("PampersScript-Italic.ttf") format("truetype"), url("PampersScript-Italic.svg#PampersScript-Italic") format("svg");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}

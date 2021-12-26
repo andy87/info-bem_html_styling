@@ -1,0 +1,15 @@
+.block__page {
+  display: block;
+}
+.b_page--item {
+  display: block;
+}
+.b_page--item#welcome {
+  background-image: url("../img/welcome/background.png");
+}
+.b_page--item#benefit {
+  background-image: url("../img/benefit/bg/background.jpg");
+}
+.b_page--item#products {
+  background-color: #2B2B2B;
+}

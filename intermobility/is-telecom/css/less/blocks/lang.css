@@ -1,0 +1,11 @@
+.block__lang {
+  display: block;
+}
+.b_lang--img {
+  display: inline-block;
+  margin-right: 20px;
+}
+.b_lang--button {
+  display: inline-block;
+}
+/*# sourceMappingURL=lang.css.map */

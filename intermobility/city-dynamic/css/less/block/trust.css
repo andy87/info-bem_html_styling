@@ -1,0 +1,31 @@
+.block__trust {
+  display: block;
+  position: relative;
+}
+.block__trust .title {
+  margin-top: 0;
+}
+.b_trust--title {
+  display: block;
+}
+.b_trust--text {
+  display: block;
+}
+.b_trust--overlay {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.b_trust--link {
+  display: flex;
+  align-content: center;
+}
+.b_trust--img {
+  display: inline-block;
+  align-self: center;
+  max-height: 84px;
+}

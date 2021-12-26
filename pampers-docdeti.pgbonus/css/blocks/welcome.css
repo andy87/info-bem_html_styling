@@ -1,0 +1,87 @@
+
+.block__welcome * {
+    font-size: 0;
+}
+
+.b_welcome--wrapper {
+    position: relative;
+}
+.b_welcome--img {
+    display: block;
+}
+.b_welcome--img.__logo{
+    position: relative;
+    margin: 150px auto 0 auto;
+}
+.b_welcome--img.__present{
+    position: absolute;
+    left: 410px;
+    top: 375px;
+}
+.b_welcome--layout{
+    position: relative;
+    z-index: 25;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.b_welcome--layer {
+    display: inline-block;
+    position: relative;
+}
+
+.b_welcome--layer.__info {
+    width: 53%;
+}
+
+.mod-message .b_welcome--layer.__info * {
+    display: none;
+}
+
+.b_welcome--header{
+    margin: 560px auto 30px auto;
+    font-family: "PampScript", Arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 43px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.b_welcome--layer.__title {
+    width: 47%;
+    padding-right: 110px;
+}
+
+.b_welcome--title {
+    margin: 60px 0 0 15px;
+    font-family: "PampScript", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 85px;
+    text-align: center;
+}
+
+.b_welcome--text {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.b_welcome--text.__small {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.b_welcome--text .break {
+    display: block;
+    margin-top: 55px;
+    font-size: 36px;
+    line-height: 36px;
+}

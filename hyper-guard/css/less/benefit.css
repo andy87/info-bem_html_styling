@@ -1,0 +1,32 @@
+.block__benefit {
+  display: block;
+}
+.b_benefit--wrapper {
+  display: flex;
+  align-content: space-between;
+}
+.b_benefit--item {
+  display: inline-block;
+}
+.b_benefit--ball {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+.b_benefit--icon {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+.b_benefit--title {
+  display: block;
+}
+.b_benefit--text {
+  display: block;
+}
+.b_benefit--img {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+/*# sourceMappingURL=benefit.css.map */

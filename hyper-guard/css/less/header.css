@@ -1,0 +1,15 @@
+.block__header {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 30px 0;
+}
+.b_header--link {
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+.b_header--logo {
+  display: block;
+}
+/*# sourceMappingURL=header.css.map */

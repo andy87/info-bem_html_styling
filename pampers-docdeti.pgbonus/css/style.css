@@ -1,0 +1,18 @@
+@import "normalize.css";
+
+@import "../fonts/stylesheet.css";
+
+@import "common.css";
+@import "design.css";
+
+@import "blocks/contact.css";
+@import "blocks/content.css";
+@import "blocks/decor.css";
+@import "blocks/footer.css";
+@import "blocks/form.css";
+@import "blocks/heart.css";
+@import "blocks/links.css";
+@import "blocks/menu.css";
+@import "blocks/welcome.css";
+
+@import "adaptive.css";

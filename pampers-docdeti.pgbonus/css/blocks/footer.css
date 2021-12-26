@@ -1,0 +1,35 @@
+
+.block__footer {
+    position: relative;
+    z-index: 10;
+}
+.b_footer--wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 0;
+}
+.b_footer--layout.__links {
+    width: 14%;
+}
+.b_footer--layout.__info {
+    width: 86%;
+    padding-left: 30px;
+}
+.b_footer--link {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+}
+.b_footer--link:hover {
+    text-decoration: underline;
+}
+.b_footer--text {
+    padding-bottom: 10px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}

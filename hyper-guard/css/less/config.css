@@ -1,0 +1,28 @@
+.b_config--button {
+  display: block;
+  height: 130px;
+}
+.b_config--header {
+  display: block;
+  padding: 8px;
+  color: #1d5cac;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  background: #11263e;
+  border: 1px solid #091e35;
+  border-bottom: none;
+}
+.b_config--header:hover {
+  border-color: #072957;
+  background: url("../img/hover.png") #001331 0 71px no-repeat;
+}
+.b_config--header.color {
+  color: white;
+}
+.b_config--description {
+  display: block;
+  color: white;
+}
+/*# sourceMappingURL=config.css.map */

@@ -1,0 +1,72 @@
+.block__header {
+  display: block;
+  height: 335px;
+  background-image: url("../img/background/main.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  &.__main {
+    position: relative;
+    height: 835px;
+    margin-bottom: 85px !important;
+    background-image: url("../img/background/header.png");
+    background-position: center top;
+  }
+}
+
+.b_header--wrapper {
+  padding: 30px 0;
+  text-align: right;
+}
+.b_header--layout {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+}
+
+.b_header--link {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.b_header--logo {
+  display: block;
+}
+.b_header--dots {
+  position: absolute;
+  top: 660px;
+  left: 0;
+  display: block;
+  width: 200px;
+  height: 270px;
+  background-image: url("../img/decor/dot.png");
+  background-repeat: repeat;
+  animation: linear 10s pulse infinite;
+
+  &.__sm {
+    top: 125px;
+    left: auto;
+    right: 170px;
+    width: 100px;
+    height: 100px;
+    background-size: 13%;
+    animation-name: pulse_sm;
+  }
+}
+
+@keyframes pulse {
+  from {top: 660px;    left: 0;}
+  25% {top: 670px;    left: 0;}
+  50% {top: 670px;    left: 10px;}
+  75% {top: 660px;    left: 10px;}
+  to {top: 660px;    left: 0;}
+}
+
+@keyframes pulse_sm {
+  from {top: 125px;    right: 170px;}
+  25% {top: 135px;    right: 170px;}
+  50% {top: 135px;    right: 180px;}
+  75% {top: 125px;    right: 180px;}
+  to {top: 125px;    right: 170px;}
+}

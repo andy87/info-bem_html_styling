@@ -1,0 +1,13 @@
+.b_map--text {
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+  color: #333333;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
