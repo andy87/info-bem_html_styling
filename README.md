@@ -1,11 +1,11 @@
 
 ## Пример моей вёрстки.  
 
-* [hyper-guard](html.andy87.ru/hyper-guard/index.html)
-* [city-dynamic](html.andy87.ru/intermobility/city-dynamic/index.html)
-* [evacharge](html.andy87.ru/intermobility/evacharge/index.html)
-* [is-telecom](html.andy87.ru/intermobility/is-telecom/index.html)
-* [pampers-docdeti](html.andy87.ru/pampers-docdeti.pgbonus/index.html)
+* [hyper-guard](http://html.andy87.ru/hyper-guard/index.html)
+* [city-dynamic](http://html.andy87.ru/intermobility/city-dynamic/index.html)
+* [evacharge](http://html.andy87.ru/intermobility/evacharge/index.html)
+* [is-telecom](http://html.andy87.ru/intermobility/is-telecom/index.html)
+* [pampers-docdeti](http://html.andy87.ru/pampers-docdeti.pgbonus/index.html)
 * [energoprof-group](https://energoprof-group.ru)
 
 ## Как я верстаю?  
