@@ -81,9 +81,9 @@
             <h3 class="b_service--title">
               first
             </h3>
-            <a class="b_service--button" href="javascript:app.service.goTo( app.service.first.id );">
+            <button class="b_service--button" onclick="app.service.goTo( app.service.first.id );">
               Далее
-            </a>
+            </button>
           </li>
           
           <li class="b_service--item">
@@ -91,9 +91,9 @@
             <h3 class="b_service--title">
               trade
             </h3>
-            <a class="b_service--button" href="javascript:app.service.goTo( app.service.trade.id );">
+            <button class="b_service--button" onclick="app.service.goTo( app.service.trade.id );">
               Далее
-            </a>
+            </button>
           </li>
           
           <li class="b_service--item">
@@ -101,9 +101,9 @@
             <h3 class="b_service--title t-left">
               cabinet
             </h3>
-            <a class="b_service--button" href="javascript:app.service.goTo( app.service.cabinet.id );">
+            <button class="b_service--button" onclick="app.service.goTo( app.service.cabinet.id );">
               Далее
-            </a>
+            </button>
           </li>
           
         </ul>
